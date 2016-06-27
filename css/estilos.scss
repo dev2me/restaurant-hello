@@ -1,44 +1,13 @@
-body, html {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	width: 100%;
-	height: 100%;
-}
-body {
-	font-family: 'Roboto', sans-serif;
-}
-.box {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	box-sizing: border-box;
-	justify-content: space-between;
-	align-items: center;
-}
-.row {
-	display: flex;
-	flex-direction: column;
-	align-items: center; 
-}
-.col-6 {
-	width: 50%;	
-}
-.col-3 {
-	width: 25%;		
-}
-.img-responsive {
-	max-width: 100%;
-}
-nav a {
-	padding: 0.8em;
-	border-top: 3px solid transparent;
-	text-decoration: none;
-	color: #333;
-}
-nav a:hover {
-	border-top: 3px solid #333;
-}
+/*Grid*/
+@import "grid.scss";
+/*Colors*/
+@import "colors.scss";
+/*navigation*/
+@import "navigation.scss";
+/*Assets*/
+@import "assets.scss";
+/*General*/
+
 h1 {
 	font-weight: 400
 }
@@ -46,4 +15,45 @@ h1 {
 	width: 80%;
 	margin: 0 auto;
 	font-weight: 300;
+}
+.full-height {
+	height: 100%;
+}
+.wall-food {
+	background-image: url("../images/maxresdefault.jpg");
+	background-size: cover;
+}
+/*Alineaciones*/
+.text-center {
+	text-align: center;
+}
+.line-small {
+	line-height: 1.8em;
+}
+/*Tamaños*/
+.big-text {
+	font-size: 3em;
+}
+.extra-big-text {
+	font-size: 5em;	
+}
+
+/*Grosores*/
+.bold {
+	font-weight: 700;
+}
+/*Shadows*/
+.shadow-text {
+	text-shadow: -1px 5px 4px #333,
+								-1px 5px 4px #333;
+}
+
+/*Paddings*/
+.small-padding {
+	padding: 0.8em;
+	box-sizing: border-box;
+}
+.big-padding {
+	padding: 2em;
+	box-sizing: border-box;
 }

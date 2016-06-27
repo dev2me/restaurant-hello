@@ -1,0 +1,29 @@
+$num_opciones : 5;
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+nav a {
+	padding: 0.8em;
+	text-decoration: none;
+	color: #333;
+	border-top-style: solid;
+	border-top-width: 0.5em;
+	border-top-color: transparent;
+	margin-top: -10px;
+	transition: all 0.5s;
+}
+
+@for $i from 1 through $num_opciones {
+	nav a:hover:nth-child(#{$i}) {
+		@if $i == 1 { border-top-color: #1A237E; transition: all 0.5s}
+		@if $i == 2 { border-top-color: #009688; transition: all 0.5s}
+		@if $i == 3 { border-top-color: #4CAF50; transition: all 0.5s}
+		@if $i == 4 { border-top-color: #B71C1C; transition: all 0.5s}
+		@if $i == 5 { border-top-color: #333; transition: all 0.5s}
+		cursor: pointer;
+	}
+} 

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Grid*/
 body, html {
   padding: 0;
   margin: 0;
@@ -10,13 +12,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.top-space {
+  margin-top: 10px;
+}
+
 .box {
   display: flex;
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
+}
+
+.between {
   justify-content: space-between;
-  align-items: center;
+}
+
+.center {
+  justify-content: center;
 }
 
 .row {
@@ -33,21 +45,117 @@ body {
   width: 25%;
 }
 
-.img-responsive {
-  max-width: 100%;
+.col-12 {
+  width: 100%;
+}
+
+/*Colors*/
+.gray {
+  background-color: #e3e5e8;
+}
+
+.gray-text {
+  color: #e3e5e8;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.indigo {
+  background-color: #1A237E;
+}
+
+.indigo-text {
+  color: #1A237E;
+}
+
+.teal {
+  background-color: #009688;
+}
+
+.teal-text {
+  color: #009688;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.green-text {
+  color: #4CAF50;
+}
+
+.red {
+  background-color: #B71C1C;
+}
+
+.red-text {
+  color: #B71C1C;
+}
+
+/*navigation*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 nav a {
   padding: 0.8em;
-  border-top: 3px solid transparent;
   text-decoration: none;
   color: #333;
+  border-top-style: solid;
+  border-top-width: 0.5em;
+  border-top-color: transparent;
+  margin-top: -10px;
+  transition: all 0.5s;
 }
 
-nav a:hover {
-  border-top: 3px solid #333;
+nav a:hover:nth-child(1) {
+  border-top-color: #1A237E;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
+nav a:hover:nth-child(2) {
+  border-top-color: #009688;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav a:hover:nth-child(3) {
+  border-top-color: #4CAF50;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav a:hover:nth-child(4) {
+  border-top-color: #B71C1C;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav a:hover:nth-child(5) {
+  border-top-color: #333;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/*Assets*/
+.img-responsive {
+  max-width: 100%;
+  width: 50%;
+  padding: 0.5em;
+}
+
+/*General*/
 h1 {
   font-weight: 400;
 }
@@ -56,4 +164,52 @@ h1 {
   width: 80%;
   margin: 0 auto;
   font-weight: 300;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.wall-food {
+  background-image: url("../images/maxresdefault.jpg");
+  background-size: cover;
+}
+
+/*Alineaciones*/
+.text-center {
+  text-align: center;
+}
+
+.line-small {
+  line-height: 1.8em;
+}
+
+/*Tamaños*/
+.big-text {
+  font-size: 3em;
+}
+
+.extra-big-text {
+  font-size: 5em;
+}
+
+/*Grosores*/
+.bold {
+  font-weight: 700;
+}
+
+/*Shadows*/
+.shadow-text {
+  text-shadow: -1px 5px 4px #333, -1px 5px 4px #333;
+}
+
+/*Paddings*/
+.small-padding {
+  padding: 0.8em;
+  box-sizing: border-box;
+}
+
+.big-padding {
+  padding: 2em;
+  box-sizing: border-box;
 }
